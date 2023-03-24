@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour
     public GameObject outro;
 
     private VideoPlayer windowsStartupVideo;
+    private VideoPlayer windowsXPVideo;
+    private VideoPlayer outroVideo;
+
+
+    private int gameState = 0;
     public bool gameFinished = false;
     public bool gameReset = false;
 
@@ -31,29 +36,67 @@ public class GameManager : MonoBehaviour
     void Start() 
     {
         HideAll();
+
         windowsStartupVideo = windowsStartup.GetComponent<VideoPlayer>();
-        windowsStartupVideo.Prepare();
-        windowsStartup.SetActive(true);
+        windowsXPVideo = windowsXP.GetComponentInChildren<VideoPlayer>();
+        outroVideo = outro.GetComponent<VideoPlayer>();
+
+        // windowsStartupVideo.Prepare();
+        // windowsXPVideo.Prepare();
+        // outroVideo.Prepare();
     }
 
 
     void Update() 
     {
-        if(gameFinished)
+        ChangeGamestate();
+
+        switch(gameState)
         {
-            HideAll();
-            outro.SetActive(true);
+            case 3:
+                outro.SetActive(true);
+                outroVideo.Play();
+                break;
+            case 2:
+                windowsXP.SetActive(true);
+                windowsXPVideo.Play();
+                break;
+            case 1:
+                windowsStartup.SetActive(true);
+                windowsStartupVideo.Play();
+                break;
+            default:
+                HideAll();
+                break;
         }
-        else if(gameReset)
+    }
+
+
+    private void ChangeGamestate()
+    {
+        if(gameState == 0 && windowsStartupVideo.isPrepared && windowsXPVideo.isPrepared && outroVideo.isPrepared)
         {
-           HideAll(); 
-           windowsStartup.SetActive(true);
-           gameReset = false;
-        }
-        else if(!(windowsStartupVideo.isPlaying))
-        {
+            Debug.Log("Videos are prepared. Switching to WindowsStartup.");
             HideAll();
-            windowsXP.SetActive(true);
+            gameState = 1;
+        }
+        else if(gameState == 1 && !windowsStartupVideo.isPlaying)
+        {
+            Debug.Log("WindowsStartup Video finished. Switching to WindowsXP.");
+            HideAll();
+            gameState = 2;
+        }
+        else if(gameFinished)
+        {
+            Debug.Log("Game won. Switching to Outro.");
+            HideAll();
+            gameState = 3;
+        }
+        else if(gameState == 2 && gameReset)
+        {
+            Debug.Log("Game lost. Switching to WindowsStartup.");
+            HideAll();
+            gameState = 1;
         }
     }
 

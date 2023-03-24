@@ -47,3 +47,5 @@ MonoBehaviour:
   windowsStartup: {fileID: 0}
   windowsXP: {fileID: 0}
   outro: {fileID: 0}
+  gameFinished: 0
+  gameReset: 0
