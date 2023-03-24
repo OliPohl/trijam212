@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject windowsXP;
     public GameObject outro;
 
+    public GameObject loadingBar;
+    public GameObject timer;
+
     private VideoPlayer windowsStartupVideo;
     private VideoPlayer windowsXPVideo;
     private VideoPlayer outroVideo;
@@ -45,6 +48,9 @@ public class GameManager : MonoBehaviour
         windowsStartupVideo.Prepare();
         windowsXPVideo.Prepare();
         outroVideo.Prepare();
+
+        loadingBar.SetActive(false);
+        timer.SetActive(false);
     }
 
 
@@ -62,6 +68,8 @@ public class GameManager : MonoBehaviour
                     break;
                 case 2:
                     windowsXP.SetActive(true);
+                    loadingBar.SetActive(true);
+                    timer.SetActive(true);
                     windowsXPVideo.Play();
                     break;
                 case 1:
@@ -93,9 +101,12 @@ public class GameManager : MonoBehaviour
         }
         else if(gameFinished)
         {
-            Debug.Log("Game won. Switching to Outro.");
-            ShowAll(false);
-            gameState = 3;
+            if(currentGameState != 3)
+            {
+                Debug.Log("Game won. Switching to Outro.");
+                ShowAll(false);
+                gameState = 3;
+            }
         }
         else if(gameState == 2 && gameReset)
         {
@@ -112,6 +123,9 @@ public class GameManager : MonoBehaviour
         windowsStartup.SetActive(io);
         windowsXP.SetActive(io);
         outro.SetActive(io);
+
+        loadingBar.SetActive(io);
+        timer.SetActive(io);
     }
 
 

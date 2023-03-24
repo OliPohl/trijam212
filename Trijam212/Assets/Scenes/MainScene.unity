@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &261035371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8603218360889537805, guid: 364b20d4ffb9c2245bfd90f088d654c8, type: 3}
+  m_PrefabInstance: {fileID: 8603218359873240692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &449159558 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4182191054939767339, guid: b6387938d392c704fa916d75867f07d5, type: 3}
@@ -216,6 +221,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8141090419307142941, guid: 4b741558fc0e07741ad4b40032a8a00e, type: 3}
   m_PrefabInstance: {fileID: 8141090417745148791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1207918648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8603218359186021571, guid: 364b20d4ffb9c2245bfd90f088d654c8, type: 3}
+  m_PrefabInstance: {fileID: 8603218359873240692}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1219809775 stripped
 GameObject:
@@ -342,13 +352,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7687594040427407259, guid: 65131871ec39d7242bfe0269f3b9b95f, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 261035371}
+    - target: {fileID: 7687594040427407259, guid: 65131871ec39d7242bfe0269f3b9b95f, type: 3}
       propertyPath: outro
       value: 
       objectReference: {fileID: 449159558}
     - target: {fileID: 7687594040427407259, guid: 65131871ec39d7242bfe0269f3b9b95f, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 261035371}
+    - target: {fileID: 7687594040427407259, guid: 65131871ec39d7242bfe0269f3b9b95f, type: 3}
       propertyPath: windowsXP
       value: 
       objectReference: {fileID: 1219809775}
+    - target: {fileID: 7687594040427407259, guid: 65131871ec39d7242bfe0269f3b9b95f, type: 3}
+      propertyPath: loadingBar
+      value: 
+      objectReference: {fileID: 1207918648}
     - target: {fileID: 7687594040427407259, guid: 65131871ec39d7242bfe0269f3b9b95f, type: 3}
       propertyPath: windowsStartup
       value: 
@@ -423,6 +445,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4182191054939767332, guid: b6387938d392c704fa916d75867f07d5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4182191054939767332, guid: b6387938d392c704fa916d75867f07d5, type: 3}
       propertyPath: m_TargetCamera
       value: 
@@ -594,6 +620,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8141090419307142940, guid: 4b741558fc0e07741ad4b40032a8a00e, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141090419307142940, guid: 4b741558fc0e07741ad4b40032a8a00e, type: 3}
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 519420031}
@@ -610,6 +640,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8603218359769476348, guid: 364b20d4ffb9c2245bfd90f088d654c8, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8603218359769476348, guid: 364b20d4ffb9c2245bfd90f088d654c8, type: 3}
       propertyPath: m_TargetCamera
       value: 
