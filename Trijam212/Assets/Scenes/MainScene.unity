@@ -300,6 +300,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062282933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+  m_PrefabInstance: {fileID: 4950425089219588256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9de9e27bfedcf4e8f84016f95c1cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2990704830855514815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,6 +514,103 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6387938d392c704fa916d75867f07d5, type: 3}
+--- !u!1001 &4950425089219588256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 323386711609676393, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 559778785250319142, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: chord
+      value: 
+      objectReference: {fileID: 8300000, guid: 16cffbce7b1b2ad488469a89b978d08c, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: click
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e6100b2247cf0f4496ca0ee4c91da93, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: blocked
+      value: 
+      objectReference: {fileID: 8300000, guid: 64a25419b2879a84faab0dbdb96b7ae5, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: errorHard
+      value: 
+      objectReference: {fileID: 8300000, guid: 332782f0b3304cc4d82d126cc1bc16c2, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: errorSoft
+      value: 
+      objectReference: {fileID: 8300000, guid: abe115fce41c4be4e90a5d462660fc2a, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: errorMiddle
+      value: 
+      objectReference: {fileID: 8300000, guid: 16cffbce7b1b2ad488469a89b978d08c, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: windowsCritical
+      value: 
+      objectReference: {fileID: 8300000, guid: 332782f0b3304cc4d82d126cc1bc16c2, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: windowsMinimized
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e6100b2247cf0f4496ca0ee4c91da93, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: windowsExclamation
+      value: 
+      objectReference: {fileID: 8300000, guid: abe115fce41c4be4e90a5d462660fc2a, type: 3}
+    - target: {fileID: 1489430778719817982, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
+      propertyPath: windowsPopupBlocked
+      value: 
+      objectReference: {fileID: 8300000, guid: 64a25419b2879a84faab0dbdb96b7ae5, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 077c253fd0dcc1f42b0550c8149e6a40, type: 3}
 --- !u!1001 &5891574367203998033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -510,6 +618,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7685219937453803732, guid: 8b67232c064ca544d834b4edb9290a7b, type: 3}
+      propertyPath: _soundManager
+      value: 
+      objectReference: {fileID: 2062282933}
     - target: {fileID: 8021099573668613578, guid: 8b67232c064ca544d834b4edb9290a7b, type: 3}
       propertyPath: m_Name
       value: mouse

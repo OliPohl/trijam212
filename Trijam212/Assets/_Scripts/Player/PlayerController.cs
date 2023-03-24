@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public SoundManager _soundManager;
+
     private Camera _mainCamera;
     private Vector2 _mousePos;
     private SpriteRenderer _mouseSprite;
@@ -65,10 +67,14 @@ public class PlayerController : MonoBehaviour
 
 
     private void OnInteract(InputAction.CallbackContext context)
-    {
-        if (context.performed)
+    {   
+        if(context.performed)
         {
-            InteractWithObject(PossibleInteractableObject);
+            _soundManager.PlayClickSFX();
+            if (context.performed)
+            {
+                InteractWithObject(PossibleInteractableObject);
+            }
         }
     }
 
