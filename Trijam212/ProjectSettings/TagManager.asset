@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 134918317
+    locked: 0
+  - name: Errors
+    uniqueID: 358276677
+    locked: 0
+  - name: Mouse
+    uniqueID: 2238717957
+    locked: 0
